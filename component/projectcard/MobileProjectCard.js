@@ -5,7 +5,7 @@ function MobileProjectCard({ project }) {
   return (
     <div className="block    relative px-2 md:hidden">
       <div className="box absolute -bottom-1 right-2.5   ">
-        <div className="circle h-20 w-20 flex items-center justify-center bottom-0 right-0 rounded-full  bg-slate-600">
+        <div className="circle h-[18vw] w-[18vw] flex items-center justify-center bottom-0 right-0 rounded-full  bg-slate-600">
           <FontAwesomeIcon className="rotate-45 text-5xl" icon={faArrowUp} />
         </div>
       </div>
