@@ -54,22 +54,27 @@ function ProjectSection() {
 
   const projects = [
     {
-      title: "Portfolio Website",
-      imgUrl: "https://i.imgur.com/JNBqQSj.jpeg",
-      description: "A modern portfolio website showcasing projects and skills.",
-      technologies: ["HTML", "CSS", "JavaScript", "React"],
+      title: "Tourism Website",
+      link: "https://safatourism.netlify.app/",
+      imgUrl: "https://ibb.co/qFc08tR4",
+      description: "A modern tourism website showcasing price and gallery.",
+      technologies: ["Next JS", "Tailwind CSS", "JavaScript", "GSAP"],
     },
     {
-      title: "E-Commerce App",
-      imgUrl: "https://i.imgur.com/ddFZc0j.jpeg",
-      description: "An online shopping platform with payment integration.",
-      technologies: ["Next.js", "Tailwind CSS", "Stripe API", "MongoDB"],
+      title: "Moody Films",
+      imgUrl: "https://ibb.co/tMFD5WrS",
+      link: "https://moodyfilm.netlify.app/home",
+      description:
+        "An online movie platform with comment and recommendation integration.",
+      technologies: ["Next.js", "Tailwind CSS", " API", "MongoDB"],
     },
     {
-      title: "AI Text Detector",
-      imgUrl: "https://i.imgur.com/QbnqCgd.jpeg",
-      description: "A tool that detects AI-generated text with high accuracy.",
-      technologies: ["Python", "Flask", "OpenAI API", "React"],
+      title: "Next Event",
+      imgUrl: "https://ibb.co/gLQnvZ9N",
+      link: "https://aryansingh-0.github.io/NextEvent/",
+      description:
+        "A website where Find and participate in exciting college events with ease. ",
+      technologies: ["React.js", "Cloudanary", "Nodemailer"],
     },
   ];
 

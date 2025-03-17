@@ -3,7 +3,7 @@ import { useEffect, useRef } from "react";
 import { FaArrowRight } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-
+import Link from "next/link";
 gsap.registerPlugin(ScrollTrigger);
 
 function ProjectCard({ project }) {
@@ -69,47 +69,49 @@ function ProjectCard({ project }) {
   }, []);
 
   return (
-    <div
-      ref={cardRef}
-      className="hidden group relative md:flex items-center w-[80%] h-[30vh] cursor-pointer rounded-md bg-light-background transition-all overflow-hidden shadow-lg"
-    >
-      {/* Animated Arrow */}
+    <Link href={project.link || "#"}>
       <div
-        ref={arrowRef}
-        className="absolute top-3 right-3 transition-all duration-300 ease-in-out"
+        ref={cardRef}
+        className="hidden group relative md:flex items-center w-[80%] h-[30vh] cursor-pointer rounded-md bg-light-background transition-all overflow-hidden shadow-lg"
       >
-        <FaArrowRight className="text-white text-2xl" />
-      </div>
+        {/* Animated Arrow */}
+        <div
+          ref={arrowRef}
+          className="absolute top-3 right-3 transition-all duration-300 ease-in-out"
+        >
+          <FaArrowRight className="text-white text-2xl" />
+        </div>
 
-      {/* Project Image */}
-      <div className="relative w-[30%] h-[90%] rounded-md overflow-hidden">
-        <img
-          ref={imageRef}
-          src={project.imgUrl}
-          alt={project.title}
-          className="h-full w-full object-cover transition-transform duration-300"
-        />
-      </div>
+        {/* Project Image */}
+        <div className="relative w-[30%] h-[90%] rounded-md overflow-hidden">
+          <img
+            ref={imageRef}
+            src={project.imgUrl}
+            alt={project.title}
+            className="h-full w-full object-cover transition-transform duration-300"
+          />
+        </div>
 
-      {/* Project Details */}
-      <div className="w-[60%] h-[90%] px-3 text-white relative">
-        <h1 className="text-2xl text-highlight">{project.title}</h1>
-        <hr className="w-[50%] border-white my-1" />
-        <p className="tracking-wider">{project.description}</p>
+        {/* Project Details */}
+        <div className="w-[60%] h-[90%] px-3 text-white relative">
+          <h1 className="text-2xl text-highlight">{project.title}</h1>
+          <hr className="w-[50%] border-white my-1" />
+          <p className="tracking-wider">{project.description}</p>
 
-        {/* Technologies Used */}
-        <div className="absolute bottom-2 flex items-center gap-2 flex-wrap">
-          {project.technologies.map((tech, index) => (
-            <span
-              key={index}
-              className="px-2 py-0.5 rounded-md border border-white text-sm"
-            >
-              {tech}
-            </span>
-          ))}
+          {/* Technologies Used */}
+          <div className="absolute bottom-2 flex items-center gap-2 flex-wrap">
+            {project.technologies.map((tech, index) => (
+              <span
+                key={index}
+                className="px-2 py-0.5 rounded-md border border-white text-sm"
+              >
+                {tech}
+              </span>
+            ))}
+          </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
 
