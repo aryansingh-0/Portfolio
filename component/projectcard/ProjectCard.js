@@ -1,9 +1,9 @@
 "use client";
-import { useEffect, useRef } from "react";
-import { FaArrowRight } from "react-icons/fa";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Link from "next/link";
+import { useEffect, useRef } from "react";
+import { FaArrowRight } from "react-icons/fa";
 gsap.registerPlugin(ScrollTrigger);
 
 function ProjectCard({ project }) {
@@ -69,10 +69,10 @@ function ProjectCard({ project }) {
   }, []);
 
   return (
-    <Link href={project.link || "#"}>
+    <Link href={project.link} target="_blank" rel="noopener noreferrer">
       <div
         ref={cardRef}
-        className="hidden group relative md:flex items-center w-[80%] h-[30vh] cursor-pointer rounded-md bg-light-background transition-all overflow-hidden shadow-lg"
+        className="hidden group relative md:flex items-center w-[80%] h-48 cursor-pointer rounded-md bg-light-background transition-all overflow-hidden shadow-lg"
       >
         {/* Animated Arrow */}
         <div

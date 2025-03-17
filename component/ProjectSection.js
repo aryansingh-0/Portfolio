@@ -56,13 +56,13 @@ function ProjectSection() {
     {
       title: "Tourism Website",
       link: "https://safatourism.netlify.app/",
-      imgUrl: "https://ibb.co/qFc08tR4",
+      imgUrl: "https://i.postimg.cc/V69DN6X5/Screenshot-2025-03-17-211043.png",
       description: "A modern tourism website showcasing price and gallery.",
       technologies: ["Next JS", "Tailwind CSS", "JavaScript", "GSAP"],
     },
     {
       title: "Moody Films",
-      imgUrl: "https://ibb.co/tMFD5WrS",
+      imgUrl: "https://i.postimg.cc/131Jhwkw/Screenshot-2025-03-17-215717.png",
       link: "https://moodyfilm.netlify.app/home",
       description:
         "An online movie platform with comment and recommendation integration.",
@@ -70,7 +70,7 @@ function ProjectSection() {
     },
     {
       title: "Next Event",
-      imgUrl: "https://ibb.co/gLQnvZ9N",
+      imgUrl: "https://i.postimg.cc/vm4mMxFL/Screenshot-2025-03-17-215925.png",
       link: "https://aryansingh-0.github.io/NextEvent/",
       description:
         "A website where Find and participate in exciting college events with ease. ",

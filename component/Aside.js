@@ -1,11 +1,11 @@
 "use client";
-import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import Link from "next/link";
-import { FaInstagram } from "react-icons/fa6";
-import { RiLinkedinBoxFill } from "react-icons/ri";
-import { MdOutlineEmail } from "react-icons/md";
+import { useEffect, useRef } from "react";
 import { FaGithub } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa6";
+import { MdOutlineEmail } from "react-icons/md";
+import { RiLinkedinBoxFill } from "react-icons/ri";
 
 function Aside() {
   const textRef = useRef(null);
@@ -67,7 +67,7 @@ function Aside() {
   }, []);
 
   return (
-    <div className="w-[90%] bg-light-background rounded-md h-[90vh] px-4 pt-2">
+    <div className="w-[90%] bg-light-background rounded-md h-fit pb-4 px-4 pt-2">
       <div className="profile flex items-center justify-center w-full bg-white h-[30vh] rounded-md overflow-hidden">
         <img
           src="https://i.imgur.com/L0nvhpd.png"
@@ -92,7 +92,7 @@ function Aside() {
           Website Developer
         </span>
       </div>
-      <div className="name w-full flex items-center justify-center mt-24">
+      <div className="name w-full flex items-center justify-center mt-[2vmax] ">
         <p className="tracking-wide w-[90%]">
           A Software Engineer who has developed countless innovative solutions.
         </p>

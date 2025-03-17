@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function MobileProjectCard({ project }) {
   return (
-    <Link href={project.link || "#"}>
+    <Link href={project.link} target="_blank" rel="noopener noreferrer">
       <div className="block    relative px-2 md:hidden">
         <div className="box absolute -bottom-1 right-2.5   ">
           <div className="circle h-[18vw] w-[18vw] flex items-center justify-center bottom-0 right-0 rounded-full  bg-slate-600">
